@@ -19,6 +19,7 @@ A: By using dtypes attribute.
 Q3. How do you select rows from a Pandas DataFrame based on a condition?
 
 A: 
+          
           import pandas as pd
           
           d = {'Name':['abc','xyz','pqr','lmn'],'age':[16,14,19,24],'gender':['M','F','M','F']}
@@ -33,7 +34,7 @@ A: By using rename() function.
           
 Q5. How do you drop columns in a Pandas DataFrame?
 
-A: By using drop function.
+A: By using drop() function.
           
           df_new = df.drop('gender',axis=1)
           df_new

@@ -103,11 +103,26 @@ A: By using astype() function.
 
 Q14. How do you sort a Pandas DataFrame by a specific column?
 
-A: 
+A: By using sort_values() function.
+
+
+           df = pd.DataFrame(data={'Name':['Jai','Abhi','Kishan','Bheem'],'Age':[12,35,24,16]})
+           df.sort_values('Name')
 
 Q15. How do you create a copy of a Pandas DataFrame?
 
+A: By using copy() function.
+
+            df = pd.DataFrame(data={'Name':['Jai','Abhi','Kishan','Bheem'],'Age':[12,35,24,16]})
+            df_copy = df.copy()
+
 Q16. How do you filter rows of a Pandas DataFrame by multiple conditions?
+
+A: filter rows of a Pandas DataFrame by multiple conditions can be achieved in any one of the below ways.
+
+   1.loc works with column labels and indexes.
+   2.eval and query works only with columns.
+   3.Boolean indexing works with values in a column only.
 
 Q17. How do you calculate the mean of a column in a Pandas DataFrame?
 
